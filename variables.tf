@@ -1,25 +1,17 @@
 variable "rg_name" {
-  description = "Resource Group Name"
+  description = "Resource group name"
   type        = string
   default     = "rgspo001"
 }
 
 variable "rg_location" {
-  description = "Resource Group Location"
+  description = "Resource group location"
   type        = string
   default     = "North Europe"
 }
 
 variable "tags" {
-  description = <<EOF
-  Resource Group Tags.
-  Example:
-  tags = {
-    "project" = "Terraform"
-    "unit"    = "IT"
-    "owner"   = "Sasa Popravak"
-  }
-  EOF
+  description = "Resource group tags"
   type        = map(string)
   default = {
     "project" = "Terraform"
